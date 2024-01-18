@@ -1,0 +1,42 @@
+:root{
+    --input-focus: #000000;
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: beige;
+    --main-color: black;
+    --bluePalet: lightblue;
+  }
+
+h1{
+    color: var(--font-color);
+    font-weight: bold;
+}
+body{
+    background-color: var(--bg-color);
+    color: var(--font-color);
+}
+h1{
+    color: var(--font-color);
+    display: inline;
+    padding: 10px;
+}
+header>a{
+    text-decoration: none;
+    color: var(--font-color);
+    padding: 1%;
+    margin-left: 40vw;
+}
+header{
+    color: var(--bg-color);
+    border: var(--font-color-sub) double 5px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    margin: 5%;
+    max-width: 37vw;
+    max-height: 25vh;
+    border-radius: 10%;
+}

@@ -1,0 +1,17 @@
+CREATE DATABASE IF NOT EXISTS EZslides;
+USE EZslides;
+CREATE TABLE IF NOT EXISTS usuario (
+    idUsuario INT AUTO_INCREMENT PRIMARY KEY,
+    fullname VARCHAR(100) NOT NULL,
+    cpf VARCHAR(14) NOT NULL,
+    phone VARCHAR(15) NOT NULL,
+    username VARCHAR(50) NOT NULL,
+    pass VARCHAR(255) NOT NULL
+);
+CREATE TABLE IF NOT EXISTS slides (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    userId INT,
+    topText TEXT,
+    sideText TEXT,
+    imageUrl TEXT
+);
